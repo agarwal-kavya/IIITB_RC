@@ -9,7 +9,7 @@ module iiitb_rc_tb;
     always #10 clk = ~clk;
     initial
         begin
-            $dumpfile("ringcounter.vcd");
+		$dumpfile("iiitb_rc.vcd");
 		$dumpvars(0, iiitb_rc_tb);
             $monitor($time," %b", out);
             init[3] = 0;
