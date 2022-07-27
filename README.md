@@ -1,1 +1,1 @@
-# iiitb_rc- IIITB Ring Counter
+# iiitb_rc- Ring Counter
