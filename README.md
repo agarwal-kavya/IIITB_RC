@@ -2,8 +2,8 @@
 This is a design of Four bits ring counter.
 
 
-To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal :
-
+##To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal:
+```
  $ git clone https://github.com/agarwal-kavya/iiitb_rc
  
  $ cd iiitb_rc
@@ -13,4 +13,4 @@ To clone the Repository and download the Netlist files for Simulation, enter the
  $ ./a.out
  
  $ gtkwave iiitb_rc.vcd
-
+```
