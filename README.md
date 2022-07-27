@@ -1,8 +1,9 @@
 # iiitb_rc - Ring Counter
 This is a design of Four bits ring counter.
 
+## Pre-Simulation
 
-##To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal:
+### To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal:
 ```
  $ git clone https://github.com/agarwal-kavya/iiitb_rc
  
