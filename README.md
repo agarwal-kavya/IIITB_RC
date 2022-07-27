@@ -16,3 +16,8 @@ This is a design of Four bits ring counter.
  
  $ gtkwave iiitb_rc.vcd
 ```
+
+## gtkwave Waveform
+
+#### After running the given codes, the waveform generated in gtkwave would look like:
+
