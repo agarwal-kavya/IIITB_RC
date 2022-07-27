@@ -21,7 +21,7 @@ This is a design of Four bits ring counter.
 
 #### After running the given codes, the waveform generated in gtkwave would look like:
 
-!(C:\Users\KAVYA\OneDrive\Pictures\Screenshots\wave.png)
+!(C:/Users/KAVYA/OneDrive/Pictures/Screenshots/wave.png)
 
 
 
