@@ -1,10 +1,10 @@
-module tb_ringcounter;
+module iiitb_rc_tb;
     reg clk;
     reg reset;
     wire [3:0] out;
     reg [3:0] init;
 
-    RingCounter counter(clk, reset, init, out);
+    iiitb_rc counter(clk, reset, init, out);
 
     always #10 clk = ~clk;
     initial
