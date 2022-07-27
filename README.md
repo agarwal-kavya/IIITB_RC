@@ -12,6 +12,7 @@ This is a design of Four bits ring counter.
  $ iverilog iiitb_rc.v iiitb__rc_tb.v
  
  $ ./a.out
+ VCD info: dumpfile test.vcd opened for output.
  
  $ gtkwave iiitb_rc.vcd
 ```
