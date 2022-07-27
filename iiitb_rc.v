@@ -7,7 +7,7 @@ module DFlipFlop(D, clk, reset, init, Q);
         else Q <= D;
 endmodule
 
-module RingCounter(clk, reset, init, out);
+module iiitb_rc(clk, reset, init, out);
     input clk, reset;
     input [3:0] init;
     output [3:0] out;
