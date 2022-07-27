@@ -10,7 +10,7 @@ module iiitb_rc_tb;
     initial
         begin
             $dumpfile("ringcounter.vcd");
-			$dumpvars(0, tb_ringcounter);
+		$dumpvars(0, iiitb_rc_tb);
             $monitor($time," %b", out);
             init[3] = 0;
             init[2] = 0;
