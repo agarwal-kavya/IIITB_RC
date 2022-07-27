@@ -1,6 +1,10 @@
 # iiitb_rc - Ring Counter
 
 To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal.
-$  sudo apt install -y git
-$  git clone https://github.com/sherylcorina/avsdbgp_3v3
-$  cd avsdbgp_3v3/Simulation/Ngspice_Simulation/Final_Simulation/PreLayout
+
+ $ git clone https://github.com/agarwal-kavya/iiitb_rc
+ $ cd iiitb_rc
+ $ iverilog iiitb_rc.v iiitb__rc_tb.v
+ $ ./a.out
+ $ gtkwave iiitb_rc.vcd
+
