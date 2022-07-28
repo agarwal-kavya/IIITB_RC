@@ -52,10 +52,24 @@ $   sudo apt get install iverilog gtkwave
 
 ## Contributors
 
+* Kavya Agarwal
 * Kunal Ghosh
-* Vasanthi D. R.
+* Nanditha Rao
+* Vasanthi D R
 * Dantu Nandini Devi
 
 ## Acknowledments
+* Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
+* V N Muralidhara, Associate Professor, Programme Coordinator, IIIT-Bangalore
+* Nanditha Rao, Professor, IIIT-Bangalore
+
 
 ## Contact Information
+
+* Kavya Agarwal, Mtech Student, International Institute of Information Technology, Bangalore kavya11.ag@gmail.com
+* Vasanthi D R, PhD Scholar, International Institute of Information Technology, Bangalore vasanthidr11@gmail.com
+* Dantu Nandini Devi, MS Student, International Institute of Information Technology, Bangalore nandini.dantu@gmail.com
+* Kunal Ghosh, Director, VSD Corp. Pvt. Ltd. kunalghosh@gmail.com
+* Nanditha Rao, Professor, IIIT-Bangalore. nanditha.rao@iiitb.ac.in
+
+
