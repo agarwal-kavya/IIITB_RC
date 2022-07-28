@@ -58,7 +58,4 @@ $   sudo apt get install iverilog gtkwave
 
 ## Acknowledments
 
-* Kunal Ghosh
-* 
-
 ## Contact Information
