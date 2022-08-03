@@ -58,7 +58,7 @@ $   sudo apt get install iverilog gtkwave
 * Vasanthi D R
 * Dantu Nandini Devi
 
-## Acknowledments
+## Acknowledgements
 * Kunal Ghosh, Director, VSD Corp. Pvt. Ltd.
 * V N Muralidhara, Associate Professor, Programme Coordinator, IIIT-Bangalore
 * Nanditha Rao, Professor, IIIT-Bangalore
