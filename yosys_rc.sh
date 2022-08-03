@@ -1,6 +1,6 @@
 # read design
 
-read_verilog /home/kavya/Desktop/ASIC/iiitb_rc/iiitb_rc.v
+read_verilog /home/kavya/Desktop/iiitb_rc/iiitb_rc.v
 
 # generic synthesis
 synth -top iiitb_rc
