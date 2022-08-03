@@ -6,8 +6,8 @@ read_verilog /home/kavya/Desktop/ASIC/iiitb_rc/iiitb_rc.v
 synth -top iiitb_rc
 
 # mapping to mycells.lib
-dfflibmap -liberty /home/kavya/Desktop/ASIC/iiitb_rc/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
-abc -liberty /home/kavya/Desktop/ASIC/iiitb_rc/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+dfflibmap -liberty /home/kavya/Desktop/iiitb_rc/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+abc -liberty /home/kavya/Desktop/iiitb_rc/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 clean
 flatten
 
