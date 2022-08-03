@@ -13,3 +13,6 @@ flatten
 
 # write synthesized design
 write_verilog -noattr iiitb_rc_synth.v
+
+# for specifications
+stat
