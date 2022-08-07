@@ -1,29 +1,16 @@
-module DFlipFlop(D, clk, reset, init, Q);
-    input D, clk, reset, init;
-    output reg Q;
-
-    always @ (posedge clk or posedge reset)
-        if(reset) Q <= init;
-        else Q <= D;
-endmodule
-
-module iiitb_rc(clk, reset, init, out);
-    input clk, reset;
-    input [3:0] init;
-    output [3:0] out;
-
-    wire [3:0] Q;
-    wire [3:0] D;
-
-    assign D[0] = Q[1];
-    assign D[1] = Q[2];
-    assign D[2] = Q[3];
-    assign D[3] = Q[0]^Q[1];
-
-    DFlipFlop d0 (D[0], clk, reset, init[0], Q[0]);
-    DFlipFlop d1 (D[1], clk, reset, init[1], Q[1]);
-    DFlipFlop d2 (D[2], clk, reset, init[2], Q[2]);
-    DFlipFlop d3 (D[3], clk, reset, init[3], Q[3]);
-
-    assign out = Q;
+module iiitb_rc(clk, ori, count);
+	input clk;
+	input ori;
+    output[3:0] count;
+    reg[3:0] temp;
+	always @(posedge clk or posedge ori)
+	begin
+		if(ori == 1)
+		begin 
+			temp <= 4'b1000;
+		end
+		else
+            temp <= {temp[0], temp[3:1]};
+	end
+	assign count = temp;
 endmodule
