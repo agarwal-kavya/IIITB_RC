@@ -75,14 +75,19 @@ Give the following commands for synthesis:
 ```
 // reads the library file from sky130//
 yosys> read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
 // reads the verilog files//
-yosys> read_verilog iiitb_icg.v dff.v
+yosys> read_verilog iiitb_rc.v
+
 //synthesize the top module of verilog file//
-yosys> synth -top iiitb_icg
+yosys> synth -top iiitb_rc
+
 //Generates netlist//
 yosys> abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
 //Simplified netlist//
 yosys> flatten
+
 //Displays the Netlist circuit//
 yosys> show
 
@@ -95,7 +100,7 @@ yosys> show
 
 ```
 //Writing Netlist//
-yosys> write_verilog -noattr iiitb_icg_netlist.v
+yosys> write_verilog -noattr iiitb_rc_net.v
 ```
 
 *3. Invoke GLS
