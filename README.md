@@ -15,14 +15,14 @@ we can see that the clock pulse (CLK) is applied to all the flip-flops simultane
 
 ### For Ubuntu
 
-*Open your terminal and type the following to install `iverilog` and `GTKWave`
+- Open your terminal and type the following to install `iverilog` and `GTKWave`
 
 ```
 $   sudo apt get update
 $   sudo apt get install iverilog gtkwave
 ```
 
-*Type the following commands to install `Yosys`
+- Type the following commands to install `Yosys`
 
 ```
 $ git clone https://github.com/YosysHQ/yosys.git
@@ -66,9 +66,9 @@ $ sudo make install
 
 GLS is generating the simulation output by running test bench with netlist file generated from synthesis as design under test. Netlist is logically same as RTL code, therefore, same test bench can be used for it.
 
-*1. Go to the directory where verilog code is present and open the terminal.
+1. Go to the directory where verilog code is present and open the terminal.
 
-*2. Invoke yosys.
+2. Invoke yosys.
 
 Give the following commands for synthesis:
 
@@ -103,7 +103,7 @@ yosys> show
 yosys> write_verilog -noattr iiitb_rc_net.v
 ```
 
-*3. Invoke GLS
+3. Invoke GLS
 
 ```
 $ iverilog ../verilog_model/primitives.v ../verilog_model/sky130_fd_sc_hd.v iiitb_rc_net.v iiitb_rc_tb.v
@@ -111,7 +111,7 @@ $ ./a.out
 $ gtkwave iiitb_rc_tb.vcd
 ```
 
-*4. Gate Level Simulation
+4. Gate Level Simulation
 
 
 ![gls sim](https://user-images.githubusercontent.com/110079729/184848738-13364382-2cda-484c-b417-568001ac2706.png)
