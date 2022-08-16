@@ -11,20 +11,35 @@ we can see that the clock pulse (CLK) is applied to all the flip-flops simultane
 
 ![image](https://user-images.githubusercontent.com/110079729/181417113-eb003fc4-77b3-4095-9615-6f30c64786d1.png)
 
-## Installing iverilog and Ubuntu
+## Icarus Verilog (iverilog) & Yosys Installation on Ubuntu
 
 ### For Ubuntu
 
-Open your terminal and type the following to install iverilog and GTKWave
+*Open your terminal and type the following to install `iverilog` and `GTKWave`
 
 ```
 $   sudo apt get update
 $   sudo apt get install iverilog gtkwave
 ```
 
+*Type the following commands to install `Yosys`
+
+```
+$ git clone https://github.com/YosysHQ/yosys.git
+
+$ sudo apt install make
+
+$ sudo apt-get install build-essential clang bison flex \
+   libreadline-dev gawk tcl-dev libffi-dev git \
+   graphviz xdot pkg-config python3 libboost-system-dev \
+   libboost-python-dev libboost-filesystem-dev zlib1g-dev
+ 
+$ sudo make install
+```
 
 
-## Functional Simulation
+
+## RTL Simulation
 
 #### To clone the Repository and download the Netlist files for Simulation, enter the following commands in your terminal:
 ```
@@ -39,14 +54,25 @@ $   sudo apt get install iverilog gtkwave
  
  $ gtkwave iiitb_rc.vcd
 ```
-
-## Functional GTKWAVE Characteristic
-
 #### After running the given codes, the waveform generated in gtkwave would look like:
 
 
 
-![wave](https://user-images.githubusercontent.com/110079729/181253577-7887020c-2db6-4e42-8fbd-b04b0a8f9d6e.png)
+## Gate Level Simulation
+
+
+
+## NETLIST
+
+## Post Synthesis Simulation
+
+
+
+
+
+
+
+
 
 
 
