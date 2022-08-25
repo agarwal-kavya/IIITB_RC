@@ -117,6 +117,13 @@ $ gtkwave iiitb_rc_tb.vcd
 ![gls sim](https://user-images.githubusercontent.com/110079729/184848738-13364382-2cda-484c-b417-568001ac2706.png)
 
 
+## Physical Design
+
+![kavya 1](https://user-images.githubusercontent.com/110079729/186621457-2859a2f2-3df1-40ae-b1fa-8b3c42502447.png)
+
+
+
+
 
 ## Contributors
 
