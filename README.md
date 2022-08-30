@@ -118,7 +118,7 @@ $ gtkwave iiitb_rc_tb.vcd
 
 
 
-## Synthesis reports
+## Including the custom cell sky130_vsdinv.
 
 
 ![stat](https://user-images.githubusercontent.com/110079729/187410498-33f4dcc5-5b31-4ecb-8679-63698084579b.png)
