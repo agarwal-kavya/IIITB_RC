@@ -117,15 +117,22 @@ $ gtkwave iiitb_rc_tb.vcd
 ![gls sim](https://user-images.githubusercontent.com/110079729/184848738-13364382-2cda-484c-b417-568001ac2706.png)
 
 
-## Physical Design
-
-![kavya 1](https://user-images.githubusercontent.com/110079729/186621457-2859a2f2-3df1-40ae-b1fa-8b3c42502447.png)
-
 
 ## Synthesis reports
 
 
 ![stat](https://user-images.githubusercontent.com/110079729/187410498-33f4dcc5-5b31-4ecb-8679-63698084579b.png)
+
+
+## Physical Design
+
+### sky130_vsdinv cell in the layout
+
+![p2](https://user-images.githubusercontent.com/110079729/187411292-75cf9bd7-be39-4cfa-a10d-55708cea92c6.png)
+
+
+### Layout
+![p3](https://user-images.githubusercontent.com/110079729/187411446-2b1bbc0f-069d-4b53-9d0c-416d33f1dc04.png)
 
 
 
