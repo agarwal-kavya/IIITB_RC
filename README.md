@@ -122,6 +122,10 @@ $ gtkwave iiitb_rc_tb.vcd
 ![kavya 1](https://user-images.githubusercontent.com/110079729/186621457-2859a2f2-3df1-40ae-b1fa-8b3c42502447.png)
 
 
+## Synthesis reports
+
+
+![stat](https://user-images.githubusercontent.com/110079729/187410498-33f4dcc5-5b31-4ecb-8679-63698084579b.png)
 
 
 
