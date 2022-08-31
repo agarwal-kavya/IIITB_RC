@@ -304,11 +304,14 @@ magic -T /home/anusha/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef rea
 ![fp2](https://user-images.githubusercontent.com/110079729/187752190-2d26e41f-433f-41e9-8a15-c76b40f2be01.png)
 
 #### Floorplan Reports
-Core area
+
+##### Core area
+
 ![Screenshot from 2022-08-30 22-50-45](https://user-images.githubusercontent.com/110079729/187752492-08b544d1-e347-4996-8908-490c72cc3109.png)
 
 
-Die area
+##### Die area
+
 ![Screenshot from 2022-08-30 22-50-52](https://user-images.githubusercontent.com/110079729/187752474-33632e8c-d0dd-47c8-9b2f-752a3ab663cb.png)
 
 
