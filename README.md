@@ -122,11 +122,11 @@ $ gtkwave iiitb_rc_tb.vcd
 Physical design is process of transforming netlist into layout which is manufacture-able [GDS]. Physical design process is often referred as PnR (Place and Route). Main steps in physical design are placement of all logical cells, clock tree synthesis & routing. During this process of physical design timing, power, design & technology constraints have to be met. Further design might require being optimized w.r.t power, performance and area.
 
 ### OpenLane and Magic Tool Installation
-##### Installation of Python3
+#### Installation of Python3
 ```
 $ sudo apt install -y build-essential python3 python3-venv python3-pip
 ```
-##### Installation of Docker
+#### Installation of Docker
 ```
 $ sudo apt-get remove docker docker-engine docker.io containerd runc (removes older version of docker if installed)
 $ sudo apt-get update
@@ -146,48 +146,48 @@ $ apt-cache madison docker-ce (copy the version string you want to install)
 $ sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io docker-compose-plugin (paste the version string copies in place of <VERSION_STRING>)
 $ sudo docker run hello-world (If the docker is successfully installed u will get a success message here)
 ```
-##### Installation of OpenLane on ubuntu
+#### Installation of OpenLane on ubuntu
 ```
 $ git clone https://github.com/The-OpenROAD-Project/OpenLane.git
 $ cd OpenLane/
 $ make
 $ make test
 ```
-##### Installation of magic on ubuntu
+#### Installation of magic on ubuntu
 Additional packages to be installed as a part of system requirements to compile magic before magic installation.<br>
-###### Installing M4 preprocessor
+##### Installing M4 preprocessor
 ```
 $ sudo apt-get install m4
 ```
-###### Installing tcsh shell
+##### Installing tcsh shell
 ```
 $ sudo apt-get install tcsh
 ```
-###### Installing csh shell
+##### Installing csh shell
 ```
 $ sudo apt-get install csh 
 ```
-###### Installing Xlib.h
+##### Installing Xlib.h
 ```
 $ sudo apt-get install libx11-dev
 ```
-###### Installing Tcl/Tk
+##### Installing Tcl/Tk
 ```
 $ sudo apt-get install tcl-dev tk-dev
 ```
-###### Installing Cairo
+##### Installing Cairo
 ```
 $ sudo apt-get install libcairo2-dev
 ```
-###### Installing OpenGL
+##### Installing OpenGL
 ```
 $ sudo apt-get install mesa-common-dev libglu1-mesa-dev
 ```
-###### Installing ncurses
+##### Installing ncurses
 ```
 $ sudo apt-get install libncurses-dev
 ```
-###### Installing Magic
+##### Installing Magic
 ```
 $ git clone https://github.com/RTimothyEdwards/magic
 $ cd magic
@@ -195,11 +195,11 @@ $ ./configure
 $ make
 $ make install
 ```
-##### Installing Klayout
+#### Installing Klayout
 ```
 $ sudo apt-get install klayout
 ```
-#### Design Preparation
+### Design Preparation
 Creating iiitb_rc design file in openlane directory
 ```
 $ cd OpenLane
@@ -239,7 +239,7 @@ $ touch config.json
 }
 ```
 
-Including sky130_vsdinv cell to the design
+### Including sky130_vsdinv cell to the design
 ```
 $ cd OpenLane
 $ cd vsdstdcelldesign
@@ -247,7 +247,7 @@ $ cp sky130_vsdinv.lef /home/kavya/OpenLane/designs/iiitb_rc/src
 $ cd libs
 $ cp sky130_fd_sc_hd__* /home/kavya/OpenLane/designs/iiitb_rc/src
 ```
-Invoking openlane tcl console
+### Invoking openlane tcl console
 ```
 $ cd OpenLane
 $ ./flow.tcl -interactive
@@ -266,14 +266,16 @@ The following commands are to merge external the lef files to the merged.nom.lef
 % add_lefs -src $lefs
 ```
 
-#### Synthesis
+### Synthesis
 Type the command on tickle after preparing design to synthesize design
 ```
 % run_synthesis
+```
 
 ![Screenshot from 2022-08-30 16-11-45](https://user-images.githubusercontent.com/110079729/187751181-d00f05ff-f37d-4ed0-81df-d415457f21ce.png)
 
-##### Synthesis Reports
+
+#### Synthesis Reports
 <b>Statistics</b>
 
 ![Screenshot from 2022-08-30 22-44-11](https://user-images.githubusercontent.com/110079729/187751498-71fd1a97-6c21-47c9-856b-bc3f1098c352.png)
@@ -282,14 +284,14 @@ Slack
 ![Screenshot from 2022-08-30 22-46-42](https://user-images.githubusercontent.com/110079729/187751626-42e68b89-0cb5-4b86-a687-101ee0f2d79c.png)
 
 
-#### Floorplan
+### Floorplan
 Command to run the floorplan
 ```
 % run_floorplan
 ```
 ![Screenshot from 2022-08-30 22-49-36](https://user-images.githubusercontent.com/110079729/187751997-3bad3ab3-67fe-4596-965e-89edce58bf41.png)
 
-##### Floorplan Results
+#### Floorplan Results
 Command to view floorplan on magic
 ```
 magic -T /home/anusha/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_rtc.def
@@ -301,7 +303,7 @@ magic -T /home/anusha/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef rea
 
 ![fp2](https://user-images.githubusercontent.com/110079729/187752190-2d26e41f-433f-41e9-8a15-c76b40f2be01.png)
 
-##### Floorplan Reports
+#### Floorplan Reports
 Core area
 ![Screenshot from 2022-08-30 22-50-45](https://user-images.githubusercontent.com/110079729/187752492-08b544d1-e347-4996-8908-490c72cc3109.png)
 
@@ -311,7 +313,7 @@ Die area
 
 
 
-#### Placement
+### Placement
 Command to run placement
 ```
 % run_placement
@@ -319,7 +321,7 @@ Command to run placement
 
 ![Screenshot from 2022-08-30 22-52-15](https://user-images.githubusercontent.com/110079729/187752801-bfdf42e0-9c2f-4df3-9883-5593f3f88232.png)
 
-##### Placement results
+#### Placement results
 Command to view placement on magic
 ```
 magic -T /home/anusha/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_rtc.def
@@ -335,7 +337,7 @@ magic -T /home/anusha/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef rea
 ![Screenshot from 2022-08-30 23-14-39](https://user-images.githubusercontent.com/110079729/187753036-b6a3e735-d9db-45d4-aa55-9643d81e3275.png)
 
 
-#### Clock-tree synthesis
+### Clock-tree synthesis
 Clock Tree Synthesis (CTS) is one of the most important stages in PnR. CTS QoR decides timing convergence & power. In most of the ICs clock consumes 30-40 % of total power. So efficient clock architecture, clock gating & clock tree implementation helps to reduce power.
 
 Command to run clock-tree synthesis
@@ -343,14 +345,14 @@ Command to run clock-tree synthesis
 run_cts
 ```
 ![Screenshot from 2022-08-30 23-20-53](https://user-images.githubusercontent.com/110079729/187754118-fd82c7b0-a15e-4c5a-86a9-74adbc6c919f.png)
-#### Routing
+### Routing
 Command to run routing
 ```
 run_routing
 ```
 ![routing](https://user-images.githubusercontent.com/110079729/187754086-4a454ce3-774b-43e7-8918-1c65af828318.png)
 
-##### Routing results
+#### Routing results
 
 ![r1](https://user-images.githubusercontent.com/110079729/187754349-da23b343-351e-46aa-a3ed-16b1926ce505.png)
 
