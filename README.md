@@ -216,7 +216,7 @@ $ touch config.json
 ```
 {
     "DESIGN_NAME": "iiitb_rc",
-    "VERILOG_FILES": "dir::src/iiitb_rtc.v",
+    "VERILOG_FILES": "dir::src/iiitb_rc.v",
     "CLOCK_PORT": "clk",
     "CLOCK_NET": "clk",
     "GLB_RESIZER_TIMING_OPTIMIZATIONS": true,
