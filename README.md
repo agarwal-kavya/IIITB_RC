@@ -294,7 +294,7 @@ Command to run the floorplan
 #### Floorplan Results
 Command to view floorplan on magic
 ```
-magic -T /home/anusha/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_rtc.def
+magic -T /home/kavya/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_rc.def
 ```
 ![Screenshot from 2022-08-30 22-51-51](https://user-images.githubusercontent.com/110079729/187752051-261a2440-bddc-4c34-98fd-2aa8041e0ae3.png)
 <b>Floorplan</b>
@@ -327,7 +327,7 @@ Command to run placement
 #### Placement results
 Command to view placement on magic
 ```
-magic -T /home/anusha/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_rtc.def
+magic -T /home/kavya/OpenLane/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.nom.lef def read iiitb_rc.def
 ```
 
 <b>Placement</b>
