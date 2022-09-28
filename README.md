@@ -364,13 +364,58 @@ run_routing
 
 ![r2](https://user-images.githubusercontent.com/110079729/187754776-14d7ffdd-a130-4c89-906e-c8f331adff42.png)
 
-
-<b> Area report by magic: </b> 
-
-![Screenshot from 2022-08-31 02-23-01](https://user-images.githubusercontent.com/110079729/187755159-03c926f5-01ae-452e-914f-19e657af25b2.png)
+## Post-Layout Results
 
 
+1. Post-synthesis gate Count
 
+![Screenshot from 2022-09-27 15-34-03](https://user-images.githubusercontent.com/110079729/192698198-d94eed83-3578-47e9-bbb8-3875d1617f43.png)
+
+
+Gate Count = 9
+
+
+2. Design Area
+
+![Screenshot from 2022-09-28 10-35-38](https://user-images.githubusercontent.com/110079729/192698246-5506c60b-824d-4cc7-a04a-e560fc08c899.png)
+
+
+Area = 2467.272um2
+
+
+3. Performance
+
+
+
+
+![Screenshot from 2022-09-27 18-34-03](https://user-images.githubusercontent.com/110079729/192698279-9f5495d1-2753-4112-8a33-ac6cf2f97f1b.png)
+
+
+
+Performance = 1/(clock period - slack) = 1/(65.55 - 52.33)ns = 75.64Mhz
+
+
+4. Flip-Flop to standard cell ratio
+
+
+![Screenshot from 2022-09-27 15-34-03](https://user-images.githubusercontent.com/110079729/192698313-010d8648-6413-4abe-bbf5-5d0582d44a5c.png)
+
+
+Flop ratio = Number of D Flip flops / Total Number of cells
+
+Flop Ratio = 4/9 = 0.44
+
+
+5. Power
+
+![Screenshot from 2022-09-27 15-51-50](https://user-images.githubusercontent.com/110079729/192698765-24cdc86e-85fb-41a3-affb-7a152da36a64.png)
+
+
+
+Internal Power = 1.06e-05 W
+Switching Power = 2.02e-06 W
+Leakage Power = 1.88e-10 W
+Total Power = 1.26e-05 W
 
 ## Contributors
 
